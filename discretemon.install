@@ -1,0 +1,12 @@
+post_install() {
+
+  printf " The package cannot be installed directly and be expected to work, an edit will need to be made: the monitor names will need to be defined as created by the driver in 'discretemon'." | fmt -c -w 80 -g 80
+
+}
+
+post_upgrade() {
+
+post_install
+
+}
+
